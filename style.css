@@ -1,0 +1,837 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.continer {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* start header */
+
+.header .continer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* end header */
+
+
+/* start photo */
+
+.photo {
+    background-color: #D5B981;
+}
+
+.photo .continer .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo .continer .box .text {
+    line-height: 2;
+}
+
+.photo .continer .box .text h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.photo .continer .box p {
+    font-weight: bold;
+}
+
+.photo .continer .box a {
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 15px;
+    border: solid 2px black;
+    font-weight: bold;
+    transition: 0.2s;
+    width: fit-content;
+    margin: 20px;
+    color: black;
+    border-radius: 10px;
+}
+
+.photo .continer .box a:hover {
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+@media (max-width:767px) {
+    .photo .continer .box {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .photo .continer .box .image img {
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .photo .continer .box .image img {
+        width: 100%;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .photo .continer .box .image img {
+        width: 100%;
+    }
+}
+
+
+/* end photo */
+
+
+/* start about */
+
+.about {
+    margin-top: 10px;
+}
+
+.about .continer {
+    text-align: center;
+    color: #777;
+}
+
+.about .content .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.about .content .box:last-child {
+    text-align: center;
+}
+
+.about .content .box .text h2 {
+    font-weight: bold;
+    color: black;
+}
+
+.about .content .box .text p {
+    color: #777;
+    font-weight: bold;
+    line-height: 2;
+    margin-top: 20px;
+    width: 96%;
+}
+
+.about .content .box .text a {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.about .content .box .text a:hover {
+    background-color: #D5B981;
+    color: black;
+}
+
+.about .content .box .image {
+    position: relative;
+}
+
+.about .content .box .image::before {
+    content: "";
+    position: absolute;
+    background-color: #1d2434;
+    width: 300px;
+    height: 400px;
+    z-index: -1;
+    top: -20px;
+}
+
+.about .content .box .image::after {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    border: solid 2px white;
+    left: 10%;
+    top: 20px;
+}
+
+.about .content .box .image img {
+    width: 500px;
+    margin-left: 20px;
+}
+
+@media (max-width:767px) {
+    .about .content .box {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .about .content .box .image {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin: 30px auto;
+    }
+    .about .content .box .image img {
+        width: 80%;
+        margin-left: 20px;
+    }
+    .about .content .box .image::before {
+        content: "";
+        position: absolute;
+        background-color: #1d2434;
+        width: 200px;
+        height: 220px;
+        z-index: -1;
+        top: -20px;
+    }
+    .about .content .box .image::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: solid 2px white;
+        left: 10%;
+        top: 0px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .about .content .box .image img {
+        width: 350px;
+        margin-left: 20px;
+    }
+    .about .content .box .image::before {
+        content: "";
+        position: absolute;
+        background-color: #1d2434;
+        width: 200px;
+        height: 350px;
+        z-index: -1;
+        top: -20px;
+        left: 10px;
+    }
+    .about .content .box .image::after {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 260px;
+        border: solid 2px white;
+        left: 10%;
+        top: 0px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .about .content .box .image img {
+        width: 350px;
+        margin-left: 20px;
+    }
+    .about .content .box .image::before {
+        content: "";
+        position: absolute;
+        background-color: #1d2434;
+        width: 200px;
+        height: 350px;
+        z-index: -1;
+        top: -20px;
+        left: 10px;
+    }
+    .about .content .box .image::after {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        border: solid 2px white;
+        left: 10%;
+        top: 5px;
+    }
+}
+
+
+/* end about */
+
+
+/* start service */
+
+.service {
+    margin-top: 20px;
+}
+
+.service .continer {
+    text-align: center;
+    line-height: 2;
+}
+
+.service .continer h4 {
+    color: #777;
+}
+
+.service .continer h2 {
+    color: black;
+    font-weight: bold;
+}
+
+.service .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 80px;
+    margin: 20px;
+}
+
+.service .content .card {
+    background-color: #ccc;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+.service .content .card img {
+    width: 100%;
+}
+
+.service .content .card .text {
+    padding: 10px;
+    line-height: 2;
+}
+
+.service .content .card .text button {
+    display: block;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+.service .content .card .text button:hover {
+    background-color: #D5B981;
+    color: white;
+    font-weight: bold;
+}
+
+.service .content .card {
+    position: relative;
+}
+
+.service .content .card::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border: solid 3px white;
+    top: 0;
+    left: 20%;
+    top: 5%;
+}
+
+@media (max-width:575px) {
+    .service .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 80px;
+        margin: 20px;
+    }
+    .service .content .card::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 180px;
+        background-color: transparent;
+        border: solid 3px white;
+        top: 0;
+        left: 20%;
+        top: 5%;
+        display: none;
+    }
+}
+
+@media (min-width:567px) and (max-width:768px) {
+    .service .content .card::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: transparent;
+        border: solid 3px white;
+        top: 0;
+        left: 15%;
+        top: 5%;
+        display: none;
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .service .content .card::after {
+        display: none;
+    }
+}
+
+
+/* end service */
+
+
+/* start price */
+
+.price {
+    margin-top: 30px;
+}
+
+.price .continer {
+    text-align: center;
+    line-height: 2;
+}
+
+.price .continer h4 {
+    color: #777;
+}
+
+.price .continer h2 {
+    color: black;
+    font-weight: bold;
+}
+
+.price .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.price .content .col .box {
+    display: flex;
+    background-color: #ccc;
+    margin: 10px;
+    transition: 0.2s;
+}
+
+.price .content .col .box .text {
+    text-align: center;
+    margin: 30px auto;
+    font-size: 25px;
+    line-height: 2;
+    transition: 0.2s;
+}
+
+.price .content .col .box:hover {
+    background-color: #D5B981;
+}
+
+
+/* end price */
+
+
+/* start photo two */
+
+.photo-two {
+    background-image: url(photo/photo_2023-09-09_17-39-38\ \(1\).jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.photo-two .continer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 2;
+}
+
+.photo-two .continer img {
+    border-radius: 50%;
+}
+
+.photo-two .continer p {
+    color: white;
+    font-weight: bold;
+}
+
+.photo-two .continer h3 {
+    color: gold;
+}
+
+.photo-two .continer h4 {
+    color: #9a8f8f;
+}
+
+@media (max-width:767px) {
+    .photo-two .continer {
+        width: 100%;
+    }
+}
+
+
+/* end photo two */
+
+
+/* start team */
+
+.team {
+    margin-top: 30px;
+}
+
+.team .continer {
+    text-align: center;
+    line-height: 2;
+}
+
+.team .continer h4 {
+    color: #777;
+}
+
+.team .continer h2 {
+    color: black;
+    font-weight: bold;
+}
+
+.team .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 10px;
+}
+
+.team .content .box .text {
+    text-align: center;
+    background-color: white;
+    position: relative;
+    bottom: 60px;
+    width: fit-content;
+    padding: 20px;
+    left: 50px;
+    transition: 0.2s;
+}
+
+.team .content .box .text:hover {
+    background-color: #D5B981;
+}
+
+.team .content .box {
+    position: relative;
+}
+
+.team .content .box::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border: solid 3px white;
+    top: 30px;
+    left: 40px;
+}
+
+.team .content .box img {
+    width: 100%;
+}
+
+@media (max-width:767px) {
+    .team .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 10px auto;
+    }
+    .team .content .box {
+        margin: 20px auto;
+    }
+    .team .content .box img {
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .team .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 10px auto;
+    }
+    .team .content .box {
+        margin: 20px auto;
+    }
+    .team .content .box img {
+        width: 100%;
+    }
+}
+
+
+/* end team */
+
+
+/* start info */
+
+.info {
+    margin-top: 30px;
+    background-color: #1d2434;
+    padding: 10px;
+}
+
+.info .continer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info .continer .text {
+    width: 100%;
+}
+
+.info .continer .text input {
+    color: white;
+}
+
+.info .continer .text input {
+    width: 90%;
+    display: block;
+    padding: 20px;
+    margin: 10px;
+    border: none;
+    border-top-style: transparent;
+    border-left-style: transparent;
+    border-right-style: transparent;
+    border-bottom: solid 2px #D5B981;
+    background-color: transparent;
+}
+
+.info .continer .text button {
+    background-color: transparent;
+    padding: 15px;
+    color: gold;
+    margin: 10px;
+    border: solid 2px #D5B981;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.info .continer .image img {
+    width: 100%;
+}
+
+@media (max-width:767px) {
+    .info {
+        padding: 10px;
+    }
+    .info .continer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* end info */
+
+
+/* sstart plog */
+
+.plog {
+    margin-top: 30px;
+}
+
+.plog .continer {
+    text-align: center;
+    line-height: 2;
+}
+
+.plog .continer h4 {
+    color: #777;
+}
+
+.plog .continer h2 {
+    color: black;
+    font-weight: bold;
+}
+
+.plog .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 80px;
+    margin: 20px;
+}
+
+.plog .content .box .text {
+    line-height: 2;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+.plog .content .box img {
+    width: 100%;
+}
+
+.plog .content .box .text a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    display: block;
+    width: fit-content;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 15px;
+    transition: 0.2s;
+    border-radius: 10px;
+}
+
+.plog .content .box .text a:hover {
+    background-color: red;
+}
+
+@media (max-width:767px) {
+    .plog .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 80px;
+        margin: 20px;
+    }
+}
+
+
+/* end plog */
+
+
+/* start footer */
+
+.footer {
+    background-color: #1d2434;
+    margin-top: 20px;
+}
+
+.footer .continer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 70px;
+}
+
+.footer .continer .box {
+    color: white;
+    line-height: 2;
+    padding: 10px;
+}
+
+.footer .continer i {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.footer .continer p {
+    color: #D5B981;
+}
+
+.footer .continer .box input {
+    display: block;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+}
+
+.footer .continer .box button {
+    display: block;
+    background-color: red;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    border: none;
+    width: 150px;
+    color: white;
+    font-weight: bold;
+    cursor: wait;
+}
+
+
+/* end footer */
+
+
+/* start end */
+
+.end {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    line-height: 2;
+}
+
+.end .continer i {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+
+/* end end */
+
+@media (min-width:1400px) {
+    .header .continer .links ul {
+        transform: translateX(-20%);
+    }
+    .about .content .box .text p {
+        width: 89%;
+    }
+    .service .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 80px;
+        margin: 120px;
+    }
+    .service .content .card::after {
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 300px;
+        background-color: transparent;
+        border: solid 3px white;
+        top: 0;
+        left: 20%;
+        top: 5%;
+    }
+    .price .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 0px;
+        margin: 120px;
+    }
+    .team .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+        margin: 120px;
+    }
+    .team .content img {
+        width: 100%;
+    }
+    .plog .content {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 80px;
+        margin: 120px;
+    }
+}
